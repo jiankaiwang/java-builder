@@ -1,0 +1,15 @@
+apply plugin: 'application'
+
+dependencies {
+  implementation project(':libs')
+  implementation project(':app')
+}
+
+jar {
+  manifest {
+    attributes 'Main-Class': 'gradles.app.Main'
+  }
+
+  from 'app/build/classes/java/main'
+  from 'libs/build/classes/java/main'
+}

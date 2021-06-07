@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+dependencies {
+  implementation project(':libs')
+}
+
+mainClassName = 'gradles.app.Main'
